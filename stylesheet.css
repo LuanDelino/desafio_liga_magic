@@ -1,0 +1,315 @@
+:root {
+    --low-price-bg-color: #69bc40;
+    --medium-price-bg-color: #dcc80a;
+    --high-price-bg-color: #fe8a64;
+    --add-list-button-bg-color: #137019;
+    --orange-bg-color: #ff6c3a;
+    --gray-gb-color: #EDEDEA;
+    --foreign-name-color: #737271;
+}
+
+body {
+    font-family: 'Jost';
+}
+
+.item_box {
+    background-color: var(--gray-gb-color);
+    color: #737271;
+}
+
+.see_more {
+    color: var(--orange-bg-color);
+    font-weight: bold;
+}
+
+.divisor_content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid var(--gray-gb-color);
+}
+
+.image_divisor {
+    width: 70%;
+    border: 1px solid var(--gray-gb-color);
+    margin: 1rem;
+}
+
+.image_picker {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image_picker > img {
+    margin: 1rem;
+}
+
+.image_sleep {
+    opacity: 0.2;
+}
+
+/*
+************************
+   CSS NAVBAR INFO 
+************************
+*/
+
+#navbar {
+    margin: 1rem 0rem;
+    color: #9a9b99;
+    font-size: small;
+}
+
+#navbar > a {
+    padding: 0 .5rem;
+}
+
+/*
+************************
+   CSS COLLECTION INFO 
+************************
+*/
+
+#colection_info {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.collection_info_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: .5rem;
+}
+
+.collection_info_data {
+    display: flex;
+    flex: auto;
+    align-items: center;
+}
+  
+.collection_info_dropdown {
+    display: flex;
+    width: 5rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.number {
+    margin: 0 0.5rem;
+}
+
+/*
+************************
+   CSS ITEM  INFO 
+************************
+*/
+
+#item_info {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item_info_names {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+
+.item_info_name {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.item_info_foreing_name {
+    color: var(--foreign-name-color);
+}
+
+.item_info_actions {
+    align-items: end;
+    justify-content: end;
+}
+
+.card_info_actions_button {
+    border: none;
+    color: #FF5820;
+}
+
+/*
+************************
+   CSS BUYLIST INFO 
+************************
+*/
+#buylist_info > .item_box {
+    padding: .5rem;
+}
+
+.buylist_info_head {
+    display: flex;
+    flex-direction: column;
+}
+
+.buylist_info_head_title {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.buylist_info_head_subtitle {
+    font-size: small;
+    color: var(--foreign-name-color);
+}
+
+.buylist_info_body {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.buylist_info_quantity > input {
+    border: none;
+}
+
+#inpValue {
+    width: 30%;
+    text-align: center;
+}
+
+#btnMore {
+    margin-left: 10%;
+}
+
+.buylist_info_add_to_list {
+    border: 1px solid #fff;
+    background-color: var(--add-list-button-bg-color);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+}
+
+.buylist_info_add_to_list > input {
+    margin-right: .5rem;
+    background-color: #fff;
+    color: var(--add-list-button-bg-color);
+    border: none;
+}
+
+/*
+************************
+      CSS CARD INFO 
+************************
+*/
+
+#card_info {
+    margin-top: 1rem;
+}
+
+.card_info_header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0.75rem;
+}
+
+.card_info_header > h4 {
+    margin: 0.5rem;
+}
+
+.card_info_item {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+
+.card_info_item_color {
+    font-weight: bold;
+    color: #0084fe;
+}
+
+.card_info_item_type {
+    font-weight: bold;
+}
+
+/*
+************************
+  CSS MARKETPLACE INFO 
+************************
+*/
+
+#marketplace_info {
+    margin-top: 1rem;
+}
+
+#marketplace_info > .marketplace_info_header {
+    display: flex;
+    align-content: space-between;
+    margin: 0 .75rem ;
+}
+
+.marketplace_info_header > .marketplace_info_header_title {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.marketplace_info_header > .marketplace_info_header_see_more {
+    width: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.marketplace_info_header_title > h4 {
+    margin-right: 0.5rem;
+}
+
+.marketplace_info_body {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.marketplace_info_item_price {
+    display: flex;
+    flex-direction: row;
+}
+
+.marketplace_info_price_low,
+.marketplace_info_price_medium,
+.marketplace_info_price_high {
+    display: flex;
+    flex-direction: row;
+}
+
+.marketplace_info_price_low_value,
+.marketplace_info_price_medium_value, 
+.marketplace_info_price_high_value {
+    margin: 0 0.5rem;
+    font-weight: bold;
+}
+
+.marketplace_info_price_low  > .marketplace_info_price_side_color {
+    padding: 0 0.2rem;
+    background-color: var(--low-price-bg-color);
+}
+.marketplace_info_price_medium  > .marketplace_info_price_side_color {
+    padding: 0 0.2rem;
+    background-color: var(--medium-price-bg-color);
+}
+.marketplace_info_price_high > .marketplace_info_price_side_color {
+    padding: 0 0.2rem;
+    background-color: var(--high-price-bg-color);
+}
